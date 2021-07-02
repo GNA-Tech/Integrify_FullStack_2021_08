@@ -39,6 +39,8 @@ Code the below page with HTML & CSS without using the generated code in Figma (o
 
 # SECTION B – HTML, CSS & JavaScript
 
+---
+
 ### Helpful learning sources:
 
 > -   JavaScript basics by W3 Schools: https://www.w3schools.com/js/
