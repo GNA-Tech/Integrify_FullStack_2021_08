@@ -58,5 +58,5 @@ You have to create a task management page, where a user can add new tasks, and d
 
 ### Hint:
 
-> -   Some HTML tags you can use: 'code(<input/>, <p>, <h1>, etc.)'
+> -   Some HTML tags you can use:
 > -   DOM manipulation with query selector
