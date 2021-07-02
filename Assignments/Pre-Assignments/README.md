@@ -19,11 +19,10 @@ We hope you will reserve enough time to **complete A & B sections by August 13th
 
 # SECTION A – HTML & CSS BASICS
 
-**Helpful learning sources:**
-_ HTML Crash Course by Traversy Media: https://www.youtube.com/watch?v=UB1O30fR-EE
+**Helpful learning sources:** \* HTML Crash Course by Traversy Media: https://www.youtube.com/watch?v=UB1O30fR-EE
 _ HTML tutorials by W3 Schools: https://www.w3schools.com/html/
 _ CSS Crash Course by Traversy Media: https://www.youtube.com/watch?v=yfoY53QXEnI&t=3s
-_ CSS Layout: https://learnlayout.com \* CSS Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+\_ CSS Layout: https://learnlayout.com \* CSS Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 Helpful other sources:
 _ Background pictures: https://unsplash.com/
