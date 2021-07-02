@@ -26,10 +26,10 @@ We hope you will reserve enough time to **complete A & B sections by August 13th
 > 3. CSS Crash Course by Traversy Media: https://www.youtube.com/watch?v=yfoY53QXEnI&t=3s
 > 4. CSS Layout: https://learnlayout.com \* CSS Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-**Helpful other sources:**
+> **Helpful other sources:**
 
-    * Background pictures: https://unsplash.com/
-    *  Icons: https://fontawesome.com/icons?d=gallery
+> 1. Background pictures: https://unsplash.com/
+> 2. Icons: https://fontawesome.com/icons?d=gallery
 
 ### Assignment:
 
