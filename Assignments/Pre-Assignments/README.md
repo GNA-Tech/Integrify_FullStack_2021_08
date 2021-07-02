@@ -19,6 +19,8 @@ We hope you will reserve enough time to **complete A & B sections by August 13th
 
 # SECTION A – HTML & CSS BASICS
 
+---
+
 ### Helpful learning sources:
 
 > -   HTML Crash Course by Traversy Media: https://www.youtube.com/watch?v=UB1O30fR-EE
