@@ -49,3 +49,14 @@ Code the below page with HTML & CSS without using the generated code in Figma (o
 > -   JavaScript Crash course by Traversy Media: https://www.youtube.com/watch?v=hdI2bqOjy3c
 > -   JavaScript functions by W3 Schools: https://www.w3schools.com/js/js_functions.asp
 > -   DOM and DOM manipulation by W3 Schools: https://www.w3schools.com/js/js_htmldom.asp
+
+## Assignment
+
+---
+
+You have to create a task management page, where a user can add new tasks, and delete them individually or all of them at once. Reference design can be found below. Code the page with HTML & CSS & JS without any framework or jquery.
+
+### Hint:
+
+> -   Some HTML tags you can use: <input/>, <p>, <h1>, etc.
+> -   DOM manipulation with query selector
