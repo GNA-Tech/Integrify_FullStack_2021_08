@@ -60,3 +60,24 @@ You have to create a task management page, where a user can add new tasks, and d
 
 > -   Some HTML tags you can use:
 > -   DOM manipulation with query selector
+
+# SECTION C – ADDITIONAL SOURCES & CONTENT THAT WILL HELP YOU GET UP TO SPEED AFTER WE START
+
+> -   Git: https://learngitbranching.js.org/
+> -   Learn JavaScript concepts: data types, operators, variables, let and const, synchronous and asynchronous, “this” keyword, promises
+> -   HTML manipulation with JavaScript: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
+> -   React: https://reactjs.org/docs/getting-started.html
+> -   Learn React concepts: virtual DOM, functional components. You should learn and focus more on functional components.
+>     -React hooks: useState, useEffect
+
+### With the above content and some additional studying, you should be able to:
+
+> -   Declare and assign variables in JavaScript
+> -   Know the difference between let and const
+> -   Be able to write JavaScript functions, with parameters
+> -   Be able to use and manipulate objects
+> -   How to use “this” keyword
+> -   Manipulate HTML elements with JavaScript
+> -   How to fetch data in JavaScript
+> -   Understand and how to use array methods: map, filter, find
+> -   Able to write React functional components with hooks
