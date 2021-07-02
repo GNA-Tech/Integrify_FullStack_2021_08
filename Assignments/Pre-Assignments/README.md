@@ -48,3 +48,4 @@ Code the below page with HTML & CSS without using the generated code in Figma (o
 > -   JavaScript basics by W3 Schools: https://www.w3schools.com/js/
 > -   JavaScript Crash course by Traversy Media: https://www.youtube.com/watch?v=hdI2bqOjy3c
 > -   JavaScript functions by W3 Schools: https://www.w3schools.com/js/js_functions.asp
+> -   DOM and DOM manipulation by W3 Schools: https://www.w3schools.com/js/js_htmldom.asp
