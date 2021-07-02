@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header__main {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(126, 128, 129, 0.6),
+            rgba(126, 128, 129, 0.6)
+        ),
+        url(../images/study.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 70px;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+span {
+    color: #f4f4f4;
+    margin-left: -30px;
+    font-weight: bold;
+}
+
+nav {
+    margin-right: 0;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    align-items: flex-end;
+    padding: 0 20px;
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+.main {
+    padding: 8em;
+}
+
+.heading {
+    text-align: center;
+    padding: 25px;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+.buttons {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6em;
+}
+
+button {
+    text-align: center;
+    border: 3px white solid;
+    padding: 5px 30px;
+    background-color: inherit;
+    margin-right: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
