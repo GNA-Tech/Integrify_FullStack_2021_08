@@ -6,6 +6,6 @@ Hi there – we’re super excited to have you on board this journey!
 
 > The document is divided into three sections;
 
-1. Basics of HTML & CSS
-2. Combining HTML, CSS, and JavaScript
-3. Additional sources & content
+> 1.  Basics of HTML & CSS
+> 2.  Combining HTML, CSS, and JavaScript
+> 3.  Additional sources & content
