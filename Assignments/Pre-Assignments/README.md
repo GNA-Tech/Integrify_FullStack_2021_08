@@ -54,7 +54,7 @@ Code the below page with HTML & CSS without using the generated code in Figma (o
 
 ---
 
-You have to create a task management page, where a user can add new tasks, and delete them individually or all of them at once. Reference design can be found below. Code the page with HTML & CSS & JS without any framework or jquery.
+You have to create a task management page, where a user can add new tasks, and delete them individually or all of them at once. Reference design can be found below. Code the page with HTML & CSS & JS **without any framework or jquery**.
 
 ### Hint:
 
