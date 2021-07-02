@@ -63,6 +63,8 @@ You have to create a task management page, where a user can add new tasks, and d
 
 # SECTION C – ADDITIONAL SOURCES & CONTENT THAT WILL HELP YOU GET UP TO SPEED AFTER WE START
 
+---
+
 > -   Git: https://learngitbranching.js.org/
 > -   Learn JavaScript concepts: data types, operators, variables, let and const, synchronous and asynchronous, “this” keyword, promises
 > -   HTML manipulation with JavaScript: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
