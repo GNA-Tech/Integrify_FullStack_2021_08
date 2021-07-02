@@ -14,5 +14,5 @@ We hope you will reserve enough time to **complete A & B sections by August 13th
 
 > Good luck and see you on August 16th at the latest!
 
-        > Best regards,
-        > Full Stack instructors & Integrify Team
+         Best regards,
+         Full Stack instructors & Integrify Team
