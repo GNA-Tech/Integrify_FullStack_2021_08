@@ -17,7 +17,7 @@ We hope you will reserve enough time to **complete A & B sections by August 13th
          Best regards,
          Full Stack instructors & Integrify Team
 
-# SECTION A – HTML & CSS BASICS
+## SECTION A – HTML & CSS BASICS
 
 ---
 
@@ -39,7 +39,7 @@ Code the below page with HTML & CSS without using the generated code in Figma (o
 
 > -   Link to design: https://www.figma.com/file/eljqCedI3f5mbe6Onf4quP/Assignment?node-id=0%3A1
 
-# SECTION B – HTML, CSS & JavaScript
+## SECTION B – HTML, CSS & JavaScript
 
 ---
 
@@ -61,7 +61,7 @@ You have to create a task management page, where a user can add new tasks, and d
 > -   Some HTML tags you can use:
 > -   DOM manipulation with query selector
 
-# SECTION C – ADDITIONAL SOURCES & CONTENT THAT WILL HELP YOU GET UP TO SPEED AFTER WE START
+## SECTION C – ADDITIONAL SOURCES & CONTENT THAT WILL HELP YOU GET UP TO SPEED AFTER WE START
 
 ---
 
