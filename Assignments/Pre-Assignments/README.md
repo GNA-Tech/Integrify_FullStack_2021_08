@@ -37,10 +37,10 @@ Code the below page with HTML & CSS without using the generated code in Figma (o
 
 > -   Link to design: https://www.figma.com/file/eljqCedI3f5mbe6Onf4quP/Assignment?node-id=0%3A1
 
-SECTION B – HTML, CSS & JavaScript
+# SECTION B – HTML, CSS & JavaScript
 
-**Helpful learning sources:**
+### Helpful learning sources:
 
-    * JavaScript basics by W3 Schools: https://www.w3schools.com/js/
-    * JavaScript Crash course by Traversy Media: https://www.youtube.com/watch?v=hdI2bqOjy3c
-    * JavaScript functions by W3 Schools: https://www.w3schools.com/js/js_functions.asp
+> -   JavaScript basics by W3 Schools: https://www.w3schools.com/js/
+> -   JavaScript Crash course by Traversy Media: https://www.youtube.com/watch?v=hdI2bqOjy3c
+> -   JavaScript functions by W3 Schools: https://www.w3schools.com/js/js_functions.asp
