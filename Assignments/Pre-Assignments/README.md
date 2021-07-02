@@ -21,13 +21,10 @@ We hope you will reserve enough time to **complete A & B sections by August 13th
 
 > Helpful learning sources:
 >
-> > HTML Crash Course by Traversy Media: https://www.youtube.com/watch?v=UB1O30fR-EE
-
-> > HTML tutorials by W3 Schools: https://www.w3schools.com/html/
-
-> > CSS Crash Course by Traversy Media: https://www.youtube.com/watch?v=yfoY53QXEnI&t=3s
-
-> > CSS Layout: https://learnlayout.com \* CSS Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+> 1. HTML Crash Course by Traversy Media: https://www.youtube.com/watch?v=UB1O30fR-EE
+> 2. HTML tutorials by W3 Schools: https://www.w3schools.com/html/
+> 3. CSS Crash Course by Traversy Media: https://www.youtube.com/watch?v=yfoY53QXEnI&t=3s
+> 4. CSS Layout: https://learnlayout.com \* CSS Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 **Helpful other sources:**
 
