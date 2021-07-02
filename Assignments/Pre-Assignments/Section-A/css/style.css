@@ -10,8 +10,8 @@
 .header__main {
     background-image: linear-gradient(
             to right bottom,
-            rgba(126, 128, 129, 0.6),
-            rgba(126, 128, 129, 0.6)
+            rgba(28, 29, 29, 0.8),
+            rgba(25, 25, 26, 0.8)
         ),
         url(../images/study.jpg);
     background-repeat: no-repeat;
@@ -71,6 +71,7 @@ p {
     text-align: center;
     padding: 20px;
     line-height: 1.5em;
+    color: #fff;
 }
 
 .buttons {
@@ -83,7 +84,7 @@ p {
 button {
     text-align: center;
     border: 3px white solid;
-    padding: 5px 30px;
+    padding: 10px 30px;
     background-color: inherit;
     margin-right: 10px;
     font-size: 16px;
