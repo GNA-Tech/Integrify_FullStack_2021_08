@@ -160,7 +160,7 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
     .card {
-        margin: 10% auto;
+        margin: 0 auto 10% auto;
         width: 60%;
     }
 }
@@ -192,6 +192,7 @@ button:hover {
 @media only screen and (max-width: 600px) {
     .card__btn {
         width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -210,6 +211,13 @@ button:hover {
     padding: 3em 0;
 }
 
+@media only screen and (max-width: 600px) {
+    .services__heading {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
+
 .footer {
     background-color: #202020;
     color: #fff;
@@ -221,9 +229,25 @@ button:hover {
     align-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .footer {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
 .copyright {
     align-self: flex-end;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .copyright {
+        width: 100%;
+        text-align: center;
+        margin-right: 10%;
+    }
 }
 
 .social__media {
@@ -234,8 +258,9 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
     .social__media {
-        justify-content: space-between;
-        width: 20%;
+        justify-content: space-around;
+        margin: 5% auto;
+        width: 30%;
     }
 }
 
