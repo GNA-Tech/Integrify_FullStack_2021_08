@@ -57,7 +57,7 @@ ul {
     ul li a::after {
         visibility: visible;
         position: absolute;
-        top: -20px;
+        top: -25px;
         right: -10%;
         content: " ";
         background-image: url("../images/dots.svg");
