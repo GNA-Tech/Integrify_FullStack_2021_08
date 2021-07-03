@@ -24,8 +24,7 @@ body {
 
 header {
     height: 70px;
-    background-color: black;
-    opacity: 0.55;
+    background-color: rgba(29, 28, 28, 0.8);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,6 +60,12 @@ ul li a {
     padding: 8em;
 }
 
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 2em;
+    }
+}
+
 .heading {
     text-align: center;
     padding: 25px;
@@ -69,6 +74,12 @@ ul li a {
     font-size: 40px;
     text-transform: uppercase;
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        font-size: 20px;
+    }
 }
 
 .main p {
@@ -80,6 +91,12 @@ ul li a {
     font-weight: 400;
 }
 
+@media only screen and (max-width: 600px) {
+    .main p {
+        font-weight: lighter;
+    }
+}
+
 .buttons {
     padding: 20px;
     display: flex;
@@ -87,17 +104,31 @@ ul li a {
     margin-bottom: 6em;
 }
 
+@media only screen and (max-width: 600px) {
+    .buttons {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
 button {
     text-align: center;
     border: 3px white solid;
     padding: 10px 30px;
     background-color: inherit;
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
     color: #fff;
+}
+@media only screen and (max-width: 600px) {
+    button {
+        margin-bottom: 20px;
+        width: 50%;
+    }
 }
 
 button:hover {
@@ -115,11 +146,23 @@ button:hover {
     margin-bottom: 20em;
 }
 
+@media only screen and (max-width: 600px) {
+    .cards {
+        display: inline;
+    }
+}
+
 .card {
     width: 25%;
     border: 2px black solid;
     padding: 10px;
-    /* margin-left: 10%; */
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        margin: 10% auto;
+        width: 60%;
+    }
 }
 
 .card__item {
@@ -144,6 +187,12 @@ button:hover {
     border: 4px black solid;
     color: black;
     margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .card__btn {
+        width: 80%;
+    }
 }
 
 .card__btn:hover {
@@ -181,6 +230,13 @@ button:hover {
     width: 15%;
     display: flex;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+    .social__media {
+        justify-content: space-between;
+        width: 20%;
+    }
 }
 
 .socials--1 {
