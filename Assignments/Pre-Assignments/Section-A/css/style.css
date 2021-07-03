@@ -48,6 +48,27 @@ ul {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+    ul {
+        visibility: hidden;
+        position: relative;
+    }
+
+    ul li a::after {
+        visibility: visible;
+        position: absolute;
+        top: -20px;
+        right: -10%;
+        content: " ";
+        background-image: url("../images/dots.svg");
+        background-size: cover;
+        height: 68px;
+        width: 68px;
+        color: white;
+        fill: white;
+    }
+}
+
 ul li a {
     text-decoration: none;
     align-items: flex-end;
