@@ -30,16 +30,39 @@ header {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
 span {
     color: #f4f4f4;
     margin-left: -30px;
     font-weight: bold;
+    padding-left: 75px;
+    width: 200px;
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 40%;
+        /* padding-left: -300px; */
+    }
 }
 
 nav {
     margin-right: 0;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 40%;
+        padding-left: 200px;
+    }
 }
 
 ul {
@@ -57,8 +80,8 @@ ul {
     ul li a::after {
         visibility: visible;
         position: absolute;
-        top: -25px;
-        right: -10%;
+        top: -10px;
+        right: -5%;
         content: " ";
         background-image: url("../images/dots.svg");
         background-size: cover;
@@ -154,6 +177,7 @@ button {
     button {
         margin-bottom: 20px;
         width: 50%;
+        font-size: 11px;
     }
 }
 
@@ -187,7 +211,7 @@ button:hover {
 @media only screen and (max-width: 600px) {
     .card {
         margin: 0 auto 10% auto;
-        width: 60%;
+        width: 75%;
     }
 }
 
