@@ -83,6 +83,7 @@ ul {
 
     .logo {
         margin-left: -25px;
+        cursor: pointer;
     }
 }
 
@@ -95,13 +96,14 @@ ul {
     ul li a::after {
         visibility: visible;
         position: absolute;
-        top: 10px;
+        top: 9px;
         right: -5px;
         content: "";
         background-image: url("../images/dots.svg");
         background-size: cover;
-        height: 65px;
-        width: 65px;
+        height: 70px;
+        width: 70px;
+        cursor: pointer;
     }
 }
 
