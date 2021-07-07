@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Assignment</title>
+    </head>
+    <body>
+        <section class="container">
+            <header class="container__header">
+                <div class="header__title">
+                    <h2>Task Management</h2>
+                </div>
+                <div class="header__form">
+                    <form action="#" class="form">
+                        <input
+                            type="text"
+                            placeholder="Title..."
+                            class="form__input"
+                        />
+                        <button class="btn">Add</button>
+                    </form>
+                </div>
+            </header>
+
+            <main class="tasks">
+                <div class="task">
+                    <div class="task__corr">
+                        <svg class="corr">
+                            <use xlink:href="images/icons.svg#icon-check"></use>
+                        </svg>
+                    </div>
+                    <div class="task__content">
+                        <p>Start Working on Assignment 2</p>
+                    </div>
+                    <div class="task__close">
+                        <svg class="close">
+                            <use xlink:href="images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <button class="foot__btn">Remove All</button>
+            </footer>
+        </section>
+    </body>
+</html>

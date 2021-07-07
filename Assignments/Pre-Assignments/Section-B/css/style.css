@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(48, 25, 52, 0.99),
+        rgba(0, 0, 0, 0.9)
+    );
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    height: 85vh;
+    margin: 3% auto;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.container__header {
+    height: 20%;
+    background-color: #000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 20px;
+    text-align: center;
+}
+
+.header__title {
+    color: #f4f4f4;
+    font-size: 30px;
+    padding: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .header__title {
+        font-size: 20px;
+    }
+
+    .container__header {
+        height: 25%;
+    }
+}
+
+.form {
+    width: 100%;
+}
+
+.form__input {
+    width: 80%;
+    border: 0;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.btn {
+    width: 15%;
+    padding: 7px 15px;
+    border: 0;
+    background-color: #a9a9a9;
+    color: #333;
+    font-size: 16px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .form__input {
+        font-size: 12px;
+        border-radius: 0;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 7px;
+        border-radius: 0;
+    }
+}
+
+.tasks {
+    height: 70%;
+    /* background-color: gray; */
+}
+
+@media only screen and (max-width: 600px) {
+    .tasks {
+        height: 60%;
+    }
+}
+
+.task {
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #008080;
+}
+
+@media only screen and (max-width: 600px) {
+    .task {
+        height: 13%;
+    }
+}
+
+.task__content {
+    justify-self: flex-start;
+    width: 80%;
+    color: #f4f4f4;
+}
+
+.task__close {
+    justify-self: flex-end;
+    width: 10%;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+.task__corr {
+    justify-self: flex-start;
+    width: 10%;
+    cursor: pointer;
+}
+
+.close {
+    height: 20px;
+    width: 20px;
+    fill: #f4f4f4;
+}
+
+.corr {
+    height: 20px;
+    width: 20px;
+    fill: #f4f4f4;
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
+}
+
+.foot__btn {
+    padding: 7px 18px;
+    font-size: 18px;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+}
