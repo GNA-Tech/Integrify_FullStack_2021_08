@@ -87,6 +87,10 @@ ul {
     }
 }
 
+/*
+* remove the nav items using the visibility element and setting the property to hidden and then 
+* use the ::after pseudo element to insert an svg (three dots)
+*/
 @media only screen and (max-width: 600px) {
     ul {
         visibility: hidden;
@@ -104,6 +108,7 @@ ul {
         height: 70px;
         width: 70px;
         cursor: pointer;
+        fill: white; /* this is not working!! */
     }
 }
 
