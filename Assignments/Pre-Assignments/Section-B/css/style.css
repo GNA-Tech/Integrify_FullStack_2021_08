@@ -10,9 +10,10 @@
 body {
     background-image: linear-gradient(
         to right bottom,
-        rgba(48, 25, 52, 0.99),
-        rgba(0, 0, 0, 0.9)
+        #db2a30 0%,
+        #330e3a 100%
     );
+    /* background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%); */
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -103,7 +104,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: #008080;
+}
+
+.task:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -115,7 +120,6 @@ body {
 .task__content {
     justify-self: flex-start;
     width: 80%;
-    color: #f4f4f4;
 }
 
 .task__close {
@@ -134,7 +138,6 @@ body {
 .close {
     height: 20px;
     width: 20px;
-    fill: #f4f4f4;
 }
 
 .corr {
@@ -154,4 +157,21 @@ body {
     border: 0;
     background-color: #000;
     color: #fff;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.revert {
+    fill: #fff;
+}
+
+.finish {
+    background-color: #008080;
+    color: #f4f4f4;
+}
+
+.done {
+    text-decoration: line-through;
 }
