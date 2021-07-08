@@ -111,6 +111,11 @@ body {
     cursor: pointer;
 }
 
+.task:active {
+    background-color: #008080;
+    color: #f4f4f4;
+}
+
 @media only screen and (max-width: 600px) {
     .task {
         height: 13%;
