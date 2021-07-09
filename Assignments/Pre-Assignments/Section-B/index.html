@@ -25,23 +25,27 @@
                 </div>
             </header>
 
-            <main class="tasks">
-                <div class="task">
-                    <div class="task__corr">
-                        <svg class="corr">
-                            <use xlink:href="images/icons.svg#icon-check"></use>
-                        </svg>
-                    </div>
+            <ul class="tasks">
+                <li class="task">
+                    <svg class="task__corr hidden">
+                        <use
+                            xlink:href="images/icons.svg#icon-check"
+                            class="corr"
+                        ></use>
+                    </svg>
+
                     <div class="task__content">
                         <p class="main__content">Comprehend Interview</p>
                     </div>
-                    <div class="task__close">
-                        <svg class="close">
-                            <use xlink:href="images/icons.svg#icon-cross"></use>
-                        </svg>
-                    </div>
-                </div>
-            </main>
+
+                    <svg class="task__close">
+                        <use
+                            xlink:href="images/icons.svg#icon-cross"
+                            class="close"
+                        ></use>
+                    </svg>
+                </li>
+            </ul>
 
             <footer class="footer">
                 <button class="foot__btn">Remove All</button>
