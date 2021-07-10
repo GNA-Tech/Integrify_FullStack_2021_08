@@ -3,9 +3,7 @@
 // Sellecting all my elements
 const formInput = document.querySelector(".form__input");
 const addButton = document.querySelector(".btn");
-const corrIcon = document.querySelector(".task__corr");
 const closeIcon = document.querySelector(".task__close");
-const taskContent = document.querySelector(".main__content");
 const parentElement = document.querySelector(".tasks");
 const taskBox = document.querySelector(".li");
 
@@ -25,9 +23,7 @@ let id = 0;
  * it if a new task is created
  * @param {*} task
  */
-const makeTask = function (task, isDone, close) {
-    if (close) return;
-
+const makeTask = function (task, isDone) {
     const DONE = isDone ? UNHIDDEN : HIDDEN;
     const TASK_CLOSE = isDone ? FINISH : "";
     const CHANGE_COLOR = isDone ? REVERT : "";
@@ -38,12 +34,11 @@ const makeTask = function (task, isDone, close) {
         <use
             xlink:href="images/icons.svg#icon-check"
             class="corr"
-            status="complete"
         ></use>
     </svg>
 
     <div class="task__content">
-        <p class="main__content " status="task_item">
+        <p class="main__content ">
             ${task}
         </p>
     </div>
@@ -52,14 +47,12 @@ const makeTask = function (task, isDone, close) {
         <use
             xlink:href="images/icons.svg#icon-cross"
             class="close"
-            status="delete"
         ></use>
     </svg>
 </li>
     `;
 
     parentElement.insertAdjacentHTML("afterbegin", html);
-    // parentElement.insertBefore(html, parentElement.childNodes[0]);
 };
 
 addButton.addEventListener("click", (e) => {
@@ -79,37 +72,30 @@ addButton.addEventListener("click", (e) => {
     console.log(tasks);
 });
 
-// addButton.addEventListener("click", () => {
-//     let txt = formInput.value;
-
-//     if (txt) {
-//         let li = document.createElement("li");
-//         li.className = "task";
-//         li.innerHTML = txt;
-//         parentElement.insertBefore(li, parentElement.childNodes[0]);
-//         formInput.value = "";
-//     }
-// });
-
-const updateTask = function (taskItem) {
-    corrIcon.classList.toggle(HIDDEN);
-    taskItem.classList.toggle(FINISH);
-    taskContent.classList.toggle(DONE);
-};
-
 /**
  * Add corr icon before the task content.
  * Change background to green.
  * Apply a class - strikethrough to the task content.
  * Revert back the color for the close button
  */
-if (closeIcon) {
-    closeIcon.addEventListener("click", function (e) {
+const updateTask = function (taskItem) {
+    let corrIcon = document.querySelector(".task__corr");
+    const taskContent = document.querySelector(".main__content");
+
+    corrIcon.classList.toggle(HIDDEN);
+    taskItem.classList.toggle(FINISH);
+    taskContent.classList.toggle(DONE);
+};
+
+parentElement.addEventListener("click", (e) => {
+    if (e.target.classList.contains("task__close")) {
+        console.log(e.target); // for testing purposes
+
         const task = e.target.closest(".task");
-        console.log(e); // for testing purposes
+        console.log(task);
 
         if (task) {
             updateTask(task);
         } else return;
-    });
-}
+    }
+});
