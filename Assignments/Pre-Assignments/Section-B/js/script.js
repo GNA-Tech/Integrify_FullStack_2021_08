@@ -29,7 +29,7 @@ const makeTask = function (task, isDone) {
     const CHANGE_COLOR = isDone ? REVERT : "";
 
     let html = `
-    <li class="task ${TASK_CLOSE}">
+    <li class="task task-${id} ${TASK_CLOSE}" id=${id}>
     <svg class="task__corr ${DONE} ${CHANGE_COLOR}">
         <use
             xlink:href="images/icons.svg#icon-check"
@@ -72,30 +72,42 @@ addButton.addEventListener("click", (e) => {
     console.log(tasks);
 });
 
+// addButton.addEventListener("click", () => {
+//     let txt = formInput.value;
+
+//     if (txt) {
+//         let li = document.createElement("li");
+//         li.className = "task";
+//         li.innerHTML = txt;
+//         parentElement.insertBefore(li, parentElement.childNodes[0]);
+//         formInput.value = "";
+//     }
+// });
+
 /**
  * Add corr icon before the task content.
  * Change background to green.
  * Apply a class - strikethrough to the task content.
  * Revert back the color for the close button
  */
-const updateTask = function (taskItem) {
-    let corrIcon = document.querySelector(".task__corr");
-    const taskContent = document.querySelector(".main__content");
+const updateTask = function (taskItem, id) {
+    theTask = taskItem.closest(`.task-${id}`);
+    const theTaskContent = theTask.querySelector(".main__content");
+    const theTaskCorrIcon = theTask.querySelector(".task__corr");
+    console.log(theTask); // just for testing purposes
 
-    corrIcon.classList.toggle(HIDDEN);
-    taskItem.classList.toggle(FINISH);
-    taskContent.classList.toggle(DONE);
+    theTaskCorrIcon.classList.toggle(HIDDEN);
+    theTask.classList.toggle(FINISH);
+    theTaskContent.classList.toggle(DONE);
 };
 
 parentElement.addEventListener("click", (e) => {
     if (e.target.classList.contains("task__close")) {
-        console.log(e.target); // for testing purposes
-
         const task = e.target.closest(".task");
-        console.log(task);
+        const id = Number(task.id);
 
         if (task) {
-            updateTask(task);
+            updateTask(task, id);
         } else return;
     }
 });
