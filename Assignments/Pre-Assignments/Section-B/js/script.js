@@ -7,7 +7,7 @@ const corrIcon = document.querySelector(".task__corr");
 const closeIcon = document.querySelector(".task__close");
 const taskContent = document.querySelector(".main__content");
 const parentElement = document.querySelector(".tasks");
-const taskBox = document.querySelector(".task");
+const taskBox = document.querySelector(".li");
 
 // hide the corr icon
 // corrIcon.classList.add("hidden");
@@ -18,6 +18,7 @@ const UNHIDDEN = "unhidden";
 const DONE = "done";
 
 let tasks = []; // in case I will use a different approach where I have to store all the tasks
+let id = 0;
 
 /**
  * this function will take the task html element and all its associate properties and recreate
@@ -57,7 +58,8 @@ const makeTask = function (task, isDone, close) {
 </li>
     `;
 
-    taskBox.insertAdjacentHTML("beforebegin", html);
+    parentElement.insertAdjacentHTML("afterbegin", html);
+    // parentElement.insertBefore(html, parentElement.childNodes[0]);
 };
 
 addButton.addEventListener("click", (e) => {
@@ -65,7 +67,10 @@ addButton.addEventListener("click", (e) => {
 
     const taskItem = formInput.value;
     if (taskItem) {
-        tasks.push(taskItem);
+        tasks.push({
+            name: taskItem,
+            id: id++,
+        });
         makeTask(taskItem, false);
     } else {
         alert("Task cannot be empty");
@@ -74,7 +79,19 @@ addButton.addEventListener("click", (e) => {
     console.log(tasks);
 });
 
-const finishTask = function (taskItem) {
+// addButton.addEventListener("click", () => {
+//     let txt = formInput.value;
+
+//     if (txt) {
+//         let li = document.createElement("li");
+//         li.className = "task";
+//         li.innerHTML = txt;
+//         parentElement.insertBefore(li, parentElement.childNodes[0]);
+//         formInput.value = "";
+//     }
+// });
+
+const updateTask = function (taskItem) {
     corrIcon.classList.toggle(HIDDEN);
     taskItem.classList.toggle(FINISH);
     taskContent.classList.toggle(DONE);
@@ -86,11 +103,13 @@ const finishTask = function (taskItem) {
  * Apply a class - strikethrough to the task content.
  * Revert back the color for the close button
  */
-closeIcon.addEventListener("click", function (e) {
-    const task = e.target.closest(".task");
-    console.log(task); // for testing purposes
+if (closeIcon) {
+    closeIcon.addEventListener("click", function (e) {
+        const task = e.target.closest(".task");
+        console.log(e); // for testing purposes
 
-    if (task) {
-        finishTask(task);
-    }
-});
+        if (task) {
+            updateTask(task);
+        } else return;
+    });
+}
