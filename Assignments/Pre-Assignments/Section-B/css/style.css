@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -62,6 +64,12 @@ body {
     padding: 7px 15px;
     font-size: 16px;
     color: #333;
+    border-style: none;
+}
+
+.form__input:focus {
+    border-style: none;
+    outline: none;
 }
 
 .btn {
@@ -88,9 +96,14 @@ body {
     }
 }
 
-.tasks {
+.all__tasks {
     height: 70%;
-    /* background-color: gray; */
+    overflow: auto;
+    /* border: 2px red solid; */
+}
+
+.tasks {
+    height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -106,15 +119,14 @@ body {
     padding: 15px;
 }
 
-/* .task:hover {
-    background-color: #d3d3d3;
+.task:hover {
     cursor: pointer;
-} */
+}
 
 .task:active {
-    background-color: #008080;
-    color: #f4f4f4;
-    fill: #fff;
+    background-color: #f4f4f4;
+    color: #000;
+    /* fill: #fff; */
 }
 
 @media only screen and (max-width: 600px) {
