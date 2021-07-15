@@ -103,12 +103,17 @@ ul {
         top: 9px;
         right: -5px;
         content: "";
-        background-image: url("../images/dots.svg");
-        background-size: cover;
         height: 70px;
         width: 70px;
-        cursor: pointer;
-        fill: white; /* this is not working!! */
+
+        /* this is for older browsers */
+        /* background-image: url("../images/dots.svg");
+        background-size: cover; */
+
+        /*for newer browsers*/
+        background-color: #fff;
+        -webkit-mask-image: url("../images/dots.svg");
+        -webkit-mask-size: cover;
     }
 }
 
